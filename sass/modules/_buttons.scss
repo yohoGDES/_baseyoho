@@ -52,6 +52,6 @@
 }
 
 .button.solid.red {
-	@include buttonSolidMix (255px, $red, #fff);
+	@include buttonSolidMix (255px, red, #fff);
 
 }

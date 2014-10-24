@@ -1,7 +1,7 @@
 /*  ===============================
              TYPOGRAPHY
 	===============================*/
-$prox: "proxima-nova", Arial, sans-serif;
+// $prox: "proxima-nova", Arial, sans-serif;
 
 body {
 	font-family: "proxima-nova";
@@ -20,10 +20,10 @@ h1, h2, h3, h4, h5, h6 {
 
 a {
 	text-decoration: none; 
-	color: $red; 
+	color: red; 
 	@include colorfade; 
 	
-	&:hover { color:$dkred; }
+	&:hover { color:red; }
 }
 
 strong { font-weight:500;}

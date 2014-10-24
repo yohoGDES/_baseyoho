@@ -3,38 +3,6 @@
 	width: 100%;
 	margin-top: 80px;
 	margin-bottom: 65px;
-	
-	h1 {
-		font: {
-			size: 48px;
-			weight: 800;
-		}
-		line-height: 36px;
-		text-transform: uppercase;
-		color: $txt;
-	}
-	
-	.subtitle {
-		font: {
-			size: 24px;
-			weight: 100;
-			style: italic;
-		}
-		color: $footgry;
-	}
-}
-
-.page-header-bg {
-	width: 100%;
-	max-width: 1150px;
-	height: 480px;
-	overflow: hidden;
-	background: {
-		color: $dkgry;
-		repeat: no-repeat;
-		position: 0 0 !important;
-	}
-	margin-bottom: 60px;
 }
 
 .push {height: 65px;}

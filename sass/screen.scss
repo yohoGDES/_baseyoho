@@ -15,48 +15,12 @@
 @import "partials/404";
 @import "partials/internal";
 @import "partials/home";
-@import "partials/privacy";
-@import "partials/process";
 
 // Third-party
 @import "vendor/gravityforms";
-@import "vendor/onepage-scroll";
  
 
 // WordPress
 img.aligncenter { display:block; margin:0 auto; } 
 img.alignleft { float:left; margin:15px 15px 15px 0; } 
 img.alignright { float:right; margin:15px 0 15px 15px; } 
-
-
-
-/* 
-.posts {
-	li {
-		text-transform: uppercase;
-		margin-bottom:36px;
-		h2 {
-			display:block;
-			line-height:34px !important;
-			margin-bottom:0px !important;
-			a {
-				font: {
-					family: $osblk;
-					size:30px;
-				}
-				color:#000;
-				&:hover { color:$red; }
-			}
-		}
-		.continue { 
-			display:block; 
-			clear:both;
-			font: {
-				family:$sinb;
-				size:16px;
-			}
-			padding:35px 0;
-		}
-	}
-}
-*/

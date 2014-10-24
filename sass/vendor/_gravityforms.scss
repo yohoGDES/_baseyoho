@@ -29,7 +29,7 @@
 				
 				&:hover {
 					background: #fff;
-					color: $red;
+					color: red;
 				}
 				
 				&:active {
@@ -58,7 +58,7 @@
 				.ginput_container {
 					input {
 						margin-bottom: 0;
-						border: 3px solid $dkred;
+						border: 3px solid red;
 					}
 				}
 				
@@ -104,16 +104,16 @@
 				@extend %inputColor;
 				
 				&:hover {
-					background: $red;
-					border-color: $red;
+					background: red;
+					border-color: red;
 					color: #fff;
 				}
 			}
 		}
 		
 		// ERROR
-		.validation_error  {color: $red;}
-		li.gfield.gfield_error .validation_message {color: $red;}
+		.validation_error  {color: red;}
+		li.gfield.gfield_error .validation_message {color: red;}
 		
 		
 		.gfield_checkbox li {
@@ -136,13 +136,13 @@
 				margin-left: 0;	
 				
 				&:hover {
-					border-color: $red;
-					color: $red;
+					border-color: red;
+					color: red;
 				}
 				
 				&:active {
-					border-color: $red;
-					color: $red;
+					border-color: red;
+					color: red;
 				}
 			}
 			
@@ -150,9 +150,9 @@
 				display: none;
 				
 				&:checked + label {
-					background: $red;
+					background: red;
 					color: #fff;
-					border-color: $red;
+					border-color: red;
 				}
 			}
 		}

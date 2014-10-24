@@ -1,0 +1,1 @@
+$(document).ready(function(){var n=function(){};n(),$(window).resize(function(){n()}),$("label").inFieldLabels(),$(".back-top").click(function(){return $("body,html").animate({scrollTop:0},800),!1}),$("input, textarea").focus(function(){$(this).addClass("curFocus")}),$("input, textarea").blur(function(){$(this).removeClass("curFocus")})});

@@ -6,8 +6,6 @@
 // SPRITES
 @import "compass/utilities/sprites";
 $sprites: sprite-map("sprites/*.png", $layout: vertical, $spacing: 40px, $sprites-repeat: no-repeat);
-$privacy: sprite-map("privacy/*.png", $layout: vertical, $spacing: 20px, $sprites-repeat: no-repeat);
-$process: sprite-map("process/*.png", $layout: vertical, $spacing: 20px, $sprites-repeat: no-repeat);
 
 
 // GLOBAL STYLES
@@ -24,16 +22,6 @@ html {
 
 
 // MIXINS
-@mixin notch($left, $right) {
-	width: 0; 
-	height: 0;
-	border: {
-		left: $left solid transparent;
-		right: $right solid transparent;					
-		top: 45px solid $teal;
-	} 
-}
-
 @mixin colorfade {
 	-webkit-transition: color 0.3s;
 	-moz-transition: color 0.3s;
