@@ -1,0 +1,171 @@
+/*  ===============================
+			Gravity Forms
+	===============================*/
+.gform_wrapper {
+	
+	/* ----- HOMEPAGE CONTACT / BE BRAVE ----- */
+	&#gform_wrapper_1 {
+		margin-top: 40px;
+		
+		input {
+			background: none;
+			border: none;
+			border-bottom: 3px solid #fff;
+			margin-bottom: 40px;
+			
+			font: {
+				size: 27px !important;
+				weight: 100;
+			}
+			color: #fff;
+			text-transform: uppercase;
+			
+			&[type="submit"] {
+				@extend .button.border.white;
+				padding: {
+					top: 12px;
+					bottom: 12px;
+				}
+				
+				&:hover {
+					background: #fff;
+					color: $red;
+				}
+				
+				&:active {
+					position: relative;
+					top: 2px;
+					left: 2px;
+				}
+			}
+		}
+		
+		label, .gfield_label {
+			display: none;
+		}
+		
+		// ERROR
+		.validation_error {
+			color: #fff;
+		}
+		
+		li.gfield{
+			&.gfield_error {
+				background: none !important;
+				border: none !important;
+				padding: 0 0 0 0 !important;
+				
+				.ginput_container {
+					input {
+						margin-bottom: 0;
+						border: 3px solid $dkred;
+					}
+				}
+				
+				.validation_message {
+					margin-top: -6px;
+					color: #fff;
+					font: {
+						style: italic;
+						weight: 100;
+					}
+				}
+			}
+		}
+	} // end gform 1
+	
+	
+	/* ----- GET STARTED ----- */
+	&#gform_wrapper_2 {
+		@extend #gform_wrapper_1;
+		
+		#field_2_5 {
+			label.gfield_label {
+				display: block;
+				font: {
+					size: 27px !important;
+					weight: 100;
+				}
+				text-transform: uppercase;
+				color: $txt;
+			}
+			margin-bottom: 40px;
+		}
+		
+		%inputColor {
+			border-color: $txt;
+			color: $txt;
+		}
+		
+		input {
+			&[type="text"] {@extend %inputColor;}
+			
+			&[type="submit"] {
+				@extend %inputColor;
+				
+				&:hover {
+					background: $red;
+					border-color: $red;
+					color: #fff;
+				}
+			}
+		}
+		
+		// ERROR
+		.validation_error  {color: $red;}
+		li.gfield.gfield_error .validation_message {color: $red;}
+		
+		
+		.gfield_checkbox li {
+			label {
+				@include buttonBorderMix (114px !important, $txt, $txt);
+				border-width: 2px;
+				height: 28px;
+				text-align: center;
+				padding: {
+					top: 4px !important;			
+					left: 0;
+					right: 0;
+				}
+				display: block;
+				font: {
+					size: 12px;
+					weight: 300;
+				}
+				cursor: pointer;
+				margin-left: 0;	
+				
+				&:hover {
+					border-color: $red;
+					color: $red;
+				}
+				
+				&:active {
+					border-color: $red;
+					color: $red;
+				}
+			}
+			
+			input[type="checkbox"] {
+				display: none;
+				
+				&:checked + label {
+					background: $red;
+					color: #fff;
+					border-color: $red;
+				}
+			}
+		}
+	} // end gform2
+} // end wrapper
+
+
+/* ----- CONFIRMATION ----- */
+#gform_confirmation_wrapper_1 {
+	margin-top: 170px;
+}
+
+#gform_confirmation_wrapper_2 {
+	color: $txt;
+	margin-left: -40px;
+}

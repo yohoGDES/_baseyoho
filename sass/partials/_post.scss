@@ -1,0 +1,129 @@
+.single {
+	&.news-children { border-top:$children 10px solid;}
+	&.news-housing { border-top:$housing 10px solid;}
+	&.news-counseling { border-top:$counseling 10px solid;}
+	&.news-resettlement { border-top:$resettlement 10px solid;}
+	.content-wrap { }
+
+	
+	.blog-wrap {
+		width:100%;
+		margin:0 auto;
+		padding-top:90px;
+		
+		.col_1 {
+				width:70%;
+				float:left;
+				display:inline-block;
+				margin-right:5%;
+				
+				.date { width:50px; height:auto; float:left; }
+				.event-date { 
+					padding: 0 7px 0 0;
+					text-align: center;
+					text-transform: uppercase;
+					color:#7d7d7d;
+					font: {
+						weight:100;
+						size:30px;
+					}
+					.month {
+						font-size:17px;
+						float: left;
+						margin-left: 5px;
+					}
+				}
+				h2 {
+					display:block;
+					width:92%;
+					margin-left:50px;
+					line-height:34px !important;
+					margin-bottom:4px !important;
+					padding-bottom:0px;
+					text-transform: capitalize;
+					a {
+						font: {
+							size:24px;
+						}
+						color:$titlegry;
+						&:hover { color:$wmblue; }
+					}
+				}
+				.post-meta {
+					margin:0px 0 5px;
+					display:block;
+					width:92%;
+					margin-left:50px;
+					padding: 2px 15px 6px 0;
+					.posted {
+						font: {
+							size:14px;
+							weight:100;
+						}
+						color:#acacac;
+					}
+				}
+				.featured-image {
+					max-width:720px;
+					max-height:322px;
+					width:92%;
+					height:auto;
+					overflow:hidden;
+					float:left;
+					display:inline-block;
+					background:gray;
+					margin-bottom:15px;
+					img { width:100%; height:auto;}
+				}
+	
+					
+					p { 
+						width:92%;
+						margin-left:50px;
+						line-height: 30px;
+						font: {
+							size:18px;
+							weight:300;
+						}
+					}
+				
+			}
+			.col_2 {
+				width:25%;
+				float:left;
+				display:inline-block;
+				padding:0 12px 12px 12px;
+				height:500px;
+				position:relative;
+			}
+		}
+
+
+	@media only screen and  (max-width: 1224px) {
+		.blog-wrap { 
+			.col_1 { 
+				li { 
+					.featured-image, .excerpt { width:92%; }
+				}
+			}
+		}
+	}
+	@media only screen and  (max-width: 993px) {
+		.blog-wrap { padding-top:50px;
+			.col_1 { width:100%;
+			.featured-image { width:100%;}
+			h2, .post-meta, p { float:left; }
+			}
+			.col_2 { width:100%; }
+		}
+	}
+	@media only screen and  (max-width: 600px) {
+		.blog-wrap { padding-top:10px;
+			.col_1 { width:100%;
+				.date { display:none; }
+				.featured-image, .excerpt { width:100%; }
+				h2, .post-meta, p { margin-left:0; width:100%;}
+			}
+		}
+	}
+}

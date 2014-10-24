@@ -1,0 +1,147 @@
+
+	
+	.profiles {
+		width:100%;
+		display:inline-block;
+		ul {
+			max-width:1400px;
+			list-style:none;
+			margin-left:0 !important;
+			li {
+				/* float:left; */
+				display:inline-block;
+				width:100%;
+				position:relative;
+				border-bottom: 1px solid #ccc;
+				padding-bottom: 25px !important;
+				min-height:225px;
+				margin-bottom:35px !important;
+				img {
+					width:163px;
+					height:163px;
+					border-radius:50%;
+					float:left;
+				}
+				span { 
+					float: left;
+					margin-left: 3%;
+				}
+				p {
+					margin-left:3%;
+					font-size:14px;
+					line-height: 24px;
+					float:left;
+					width:70%;
+				}
+				.view { 
+					position: absolute;
+					left: 43px;
+					top: 170px;
+					font-size: 14px;
+					text-transform: uppercase;
+					color: #ccc;
+
+				}
+				a { 
+					color:$txt;
+					transition:all 0.3s ease-in-out;
+					&:hover { 
+						color:$wmblue; 
+						img { transition:all 0.3s ease-in-out; border:5px solid $children; }
+					}
+				}
+			}
+		}
+	}
+	
+	.parentid-207 {
+		&.page-header-bg { height:225px;}
+		&.body-wrap { margin-top:225px;}
+		.content { width:100%; }
+	}
+	 
+
+
+ /*  ===============================
+			MEDIA QUERIES
+	===============================*/	
+/* 	DESKTOP - MEDIUM */
+	@media only screen and  (max-width: 1280px) { 
+	}
+/* 	DESKTOP - MEDIUM */
+	@media only screen and  (max-width: 1109px) { 
+
+	}
+/* 	iPAD HORIZONTAL / OLDER BROWSER */
+	@media only screen and  (max-width: 1024px) { 
+		.profiles {
+			ul {		
+				li {
+					p {
+						width:66%;
+					}
+				}
+			}
+		}
+	}
+
+/* TABLET	 */
+@media only screen and (max-width: 768px) {
+	.profiles {
+			ul {		
+				li {
+					p {
+						width:56%;
+					}
+				}
+			}
+		}
+	
+}
+	@media only screen and (max-width: 568px) {
+	}
+
+/* iPHONE VERTICAL */
+	@media only screen and (max-width: 385px) {
+	.profiles {
+		ul {
+			text-align: center;
+			li {
+				text-align: center;
+				padding:0;
+				img {
+					float:none;
+					display:block;
+					text-align: center;
+					margin:0 auto;
+				}
+				span { 
+					float: none;
+					display:block;
+					margin:10px 0;
+				}
+				p {
+					margin-left:0;
+					float:left;
+					width:100%;
+				}
+				.view { 
+					position:inherit;
+					left: 0;
+					top: 0;
+					text-align: center;
+					display: block;
+				}
+			}
+		}
+	}
+	
+	.parentid-207 {
+		.content { 
+			img { max-width:100%; height:auto;} 
+		}
+	}
+
+	}
+/* ***************	END MEDIA QUERIES ************ */
+

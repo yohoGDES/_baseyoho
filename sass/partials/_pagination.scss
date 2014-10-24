@@ -1,0 +1,39 @@
+.wp-paginate {
+	float:right;
+	li {
+/* 		border-right: 1px solid #ccc; */
+		font: {
+				size:16px;
+			}
+		a {
+			color:$btngry;
+			border: none;
+			margin-right: 4px;
+			padding: 6px 15px;
+			background:none;
+			&:hover {
+				color:$red;
+				background:none;	
+			}
+			&.next { 
+				background: sprite($sprites, arrow-right, 0px, 6px);
+				color:transparent;
+				&:hover {
+				}
+			}
+			&.prev { 
+				background: sprite($sprites, arrow-left, 0px, 6px);
+				color:transparent;
+				&:hover {
+
+				}
+			}
+		}
+		.current {
+			background:none;
+			color:$blue;
+			border:none;
+		}
+		&:first-child { display:none; }
+	}
+}

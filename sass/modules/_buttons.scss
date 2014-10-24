@@ -1,0 +1,57 @@
+.the-article-content, .the-comments {
+	float:left;
+}
+
+.button-blog { 
+	width:100%;
+	padding:8px;
+/* 	background: sprite($sprites, arrow-left-w, 60px, 14px) no-repeat; */
+/* 	background-color: $btngry; */
+	display:block;
+	margin-bottom:20px;
+	padding-left:30px;
+	text-align: center;
+	text-transform: uppercase;
+	color:#fff;
+	@include bgfade;
+
+}
+
+%btnSettings {
+	height: 60px;
+	font-size: 24px;
+	text-transform: uppercase;
+	font-weight: 100;
+	padding: 16px 60px;
+	transition: 0.3s background;
+}
+
+@mixin buttonBorderMix($width, $border-color, $color) {
+	@extend %btnSettings;
+	width: $width;
+	border: 3px $border-color solid;
+	color: $color;
+	background: none;
+}
+
+@mixin buttonSolidMix($width, $bgcolor, $color) {
+	@extend %btnSettings;
+	width: $width;
+	background: $bgcolor;
+	color: $color;
+}
+
+.button.border.white {
+	@include buttonBorderMix (225px, #fff, #fff);
+}
+
+.button.border.black {
+	@extend .button.border.white;
+	color: $txt;
+	border-color: $txt;
+}
+
+.button.solid.red {
+	@include buttonSolidMix (255px, $red, #fff);
+
+}

@@ -1,0 +1,63 @@
+.the-article-content, .the-comments {
+			float:left;
+		}
+#commentform {
+	p { position:relative !important; }
+	label  { position:absolute; top:26px; left:12px; color:#bfbfbf; }
+	label[for="comment"] {
+		top:24px;
+	}
+	input[type="text"] { 
+		height:38px; 
+		border:1px solid #bfbfbf; 
+		color:#333;
+		padding:12px;
+		font-family:$sinr;
+		font-size:14px;
+		margin-top:-15px
+	}
+	textarea  { border:1px solid #bfbfbf; color:#333; padding:12px; font-family:$sinr; font-size:14px; margin-top:15px}
+	input[type="submit"] { 
+		background: url('../images/submit-comment.png') no-repeat 0 0;
+		width:162px;
+		border:none;
+		color:transparent;
+		cursor: pointer;
+		&:hover {
+			background-position: 0 -22px;
+		}
+	}
+}
+.commentlist {
+	li {
+		text-transform:none;
+		font: {
+			family: $sinr;
+		}
+		.children {
+			margin-left:15px;
+		}
+		.reply {
+			text-align:right;
+			font-size:14px;
+			text-transform:uppercase;
+			a { 
+				&:hover { color:$red; } 
+			}
+		}				
+		.comment-body {
+			padding:15px 10px 10px 10px;
+			border-bottom:1px solid #efefef;
+		}
+		.commentmetadata {
+			position:relative;
+			margin-top:6px;
+			top:0px;
+			right:0px;
+			font-size:12px;
+		}
+		.comment-author {
+			font-family:$sinb;
+		}
+	}
+}

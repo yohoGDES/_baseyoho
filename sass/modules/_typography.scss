@@ -1,0 +1,37 @@
+/*  ===============================
+             TYPOGRAPHY
+	===============================*/
+$prox: "proxima-nova", Arial, sans-serif;
+
+body {
+	font-family: "proxima-nova";
+	color: $txt;
+}
+
+p {
+	font-size: 18px;
+	line-height: 30px;
+	color: $txt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none; 
+	color: $red; 
+	@include colorfade; 
+	
+	&:hover { color:$dkred; }
+}
+
+strong { font-weight:500;}
+
+em { font-style: italic; }
+
+blockquote { 
+	text-transform: uppercase;
+	font-style: italic;
+	padding: 10px 30px; 
+}
